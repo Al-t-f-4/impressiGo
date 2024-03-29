@@ -1,4 +1,4 @@
-package logg
+package mlg
 
 import (
     "fmt"
@@ -6,12 +6,12 @@ import (
     "moduleI/er"
 )
 
-func my_log ( ) {
+func My_log ( ) {
 
     log.SetPrefix ( "Err module: " )
     log.SetFlags ( 0 )
 
-    msg, err := er.my_err ( "" )
+    msg, err := er.My_err ( "Master" )
     if err != nil {
         log.Fatal(err)
     }
